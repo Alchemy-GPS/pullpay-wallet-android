@@ -1,1 +1,2 @@
 # pullpay-wallet-android
+同时支持pullpay和pushpay的wallet
