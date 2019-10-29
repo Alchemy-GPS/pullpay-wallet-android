@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/otc_fragment_main"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/otc_fragment_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@mipmap/wallet_title_bg">
+
+        <RelativeLayout
+            android:visibility="gone"
+            android:id="@+id/otc_title_scan_layout"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true">
+
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:src="@mipmap/otc_title_scan" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <org.payio.customview.TitleTextView
+                android:id="@+id/otc_title_buy"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/otc_buy"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+
+            <org.payio.customview.TitleTextView
+                android:id="@+id/otc_title_sell"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/otc_sell"
+                android:textColor="@color/main_tab_text_ed"
+                android:textSize="20dp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/otc_title_plus_layout"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true">
+
+            <ImageView
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="16dp"
+                android:src="@mipmap/otc_title_plus" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/otc_radio_layout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@mipmap/otc_radio_bg"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/otc_radio_img"
+            android:layout_width="15dp"
+            android:layout_height="14dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:src="@mipmap/otc_radio" />
+
+        <TextView
+            android:id="@+id/otc_radio_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/otc_radio_img"
+            android:text="@string/otc_new_notification"
+            android:textColor="@color/blue_theme" />
+    </RelativeLayout>
+
+    <org.payio.customview.CtrlScrollViewPager
+        android:id="@+id/fragment_otc_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

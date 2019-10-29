@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <declare-styleable name="RoundCornerImageView">
+        <attr name="radius" format="dimension" />
+        <attr name="isCircle" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="EditTextHintIcon">
+        <attr name="imageSize" format="dimension" />
+        <attr name="hintImage" format="reference" />
+        <attr name="hintText" format="string" />
+        <attr name="hintTextColor" format="color" />
+        <attr name="hintTextSize" format="dimension" />
+        <attr name="hintGravity">
+            <flag name="center" value="1" />
+            <flag name="left" value="2" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="SlidingTabLayout">
+        <attr name="widthCutOffset" format="dimension" />
+        <attr name="drawableResId" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="MaterialSpinner" tools:ignore="ResourceName">
+        <attr name="ms_arrow_tint" format="color" />
+        <attr name="ms_hide_arrow" format="boolean" />
+        <attr name="ms_background_color" format="color" />
+        <attr name="ms_text_color" format="color" />
+        <attr name="ms_dropdown_max_height" format="dimension" />
+        <attr name="ms_dropdown_height" format="dimension">
+            <enum name="fill_parent" value="-1" />
+            <enum name="match_parent" value="-1" />
+            <enum name="wrap_content" value="-2" />
+        </attr>
+        <attr name="ms_background_selector" format="integer" />
+        <attr name="ms_padding_top" format="dimension" />
+        <attr name="ms_padding_left" format="dimension" />
+        <attr name="ms_padding_bottom" format="dimension" />
+        <attr name="ms_padding_right" format="dimension" />
+        <attr name="ms_popup_padding_top" format="dimension" />
+        <attr name="ms_popup_padding_left" format="dimension" />
+        <attr name="ms_popup_padding_bottom" format="dimension" />
+        <attr name="ms_popup_padding_right" format="dimension" />
+        <attr name="ms_hint" format="string" />
+        <attr name="ms_hint_color" format="color" />
+    </declare-styleable>
+
+    <!--自定义属性 -->
+    <declare-styleable name="ClipViewLayout">
+        <attr name="clipType" format="enum">
+            <enum name="circle" value="1" />
+            <enum name="rectangle" value="2" />
+        </attr>
+        <attr name="mHorizontalPadding" format="dimension" />
+        <attr name="clipBorderWidth" format="dimension" />
+    </declare-styleable>
+
+
+    <declare-styleable name="CircleImageView">
+        <attr name="circle_border_width" format="dimension" />
+        <attr name="circle_border_color" format="color" />
+        <attr name="circle_border_overlay" format="boolean" />
+        <attr name="circle_background_color" format="color" />
+    </declare-styleable>
+</resources>

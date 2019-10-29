@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".mvp.clip.ClipActivity">
+
+    <RelativeLayout
+        android:id="@+id/clip_head_title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white">
+
+        <RelativeLayout
+            android:id="@+id/clip_head_title_back"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true">
+
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="16dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:src="@mipmap/arr_left_dark" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/clip_head_clip"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/clip_head_image_clip"
+                android:textColor="@color/blue_theme"
+                android:textSize="16dp" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <org.payio.customview.clipview.ClipViewLayout
+        android:id="@+id/clip_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/clip_head_title_layout"
+        app:clipBorderWidth="2dp"
+        app:clipType="circle"
+        app:mHorizontalPadding="30dp" />
+
+</RelativeLayout>

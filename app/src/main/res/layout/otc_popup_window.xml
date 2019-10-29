@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/main_tab_text_ed"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/otc_popup_create_trade"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text="@string/otc_pop_create_trade"
+        android:textColor="@color/white" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/black" />
+
+    <TextView
+        android:id="@+id/otc_popup_my_trade"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text="@string/otc_pop_my_trade"
+        android:textColor="@color/white" />
+</LinearLayout>

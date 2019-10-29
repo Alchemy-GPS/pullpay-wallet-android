@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="76dp"
+    android:background="@mipmap/wallet_crypto_bg">
+
+    <ImageView
+        android:id="@+id/item_crypto_icon"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="24dp"
+        android:src="@mipmap/bi_bitcny"/>
+
+    <TextView
+        android:id="@+id/item_crypto_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@+id/item_crypto_icon"
+        android:text="USDT"
+        android:textColor="@color/grey_3"
+        android:textSize="16dp"/>
+
+    <ImageView
+        android:id="@+id/item_crypto_arrow"
+        android:layout_width="10dp"
+        android:layout_height="16dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="16dp"
+        android:src="@mipmap/arr_right_gray"/>
+
+    <TextView
+        android:id="@+id/item_crypto_unit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="8dp"
+        android:layout_toLeftOf="@+id/item_crypto_arrow"
+        android:maxLines="1"
+        android:text="USDT"
+        android:textColor="@color/grey_A"
+        android:textSize="12dp"/>
+
+    <TextView
+        android:id="@+id/item_crypto_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="8dp"
+        android:layout_toLeftOf="@+id/item_crypto_unit"
+        android:layout_toRightOf="@+id/item_crypto_name"
+        android:gravity="right"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="0.00000"
+        android:textColor="@color/blue_theme"
+        android:textSize="18dp"/>
+
+    <View
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="66dp"
+        android:background="@color/grey_F2"/>
+</RelativeLayout>

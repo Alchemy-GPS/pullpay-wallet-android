@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/send_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white">
+
+        <RelativeLayout
+            android:id="@+id/send_titlebar_back"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true">
+
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="16dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:src="@mipmap/arr_left_dark"/>
+        </RelativeLayout>
+
+        <org.payio.customview.TitleTextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:layout_centerInParent="true"
+            android:text="@string/send_title"
+            android:textColor="@color/main_tab_text_ed"
+            android:textSize="20dp"/>
+
+        <RelativeLayout
+            android:id="@+id/send_titlebar_scan"
+            android:layout_width="46dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true">
+
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/wallet_title_scan"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/below_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_below="@+id/send_title_bar"
+        android:background="@color/grey_F2"/>
+
+    <EditText
+        android:id="@+id/send_et_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/below_title_bar"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/edittext_border_background"
+        android:gravity="center_vertical"
+        android:hint="@string/send_currency_address"
+        android:inputType="textMultiLine"
+        android:minHeight="45dp"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp"
+        android:textColor="@color/grey_5"
+        android:textColorHint="@color/grey_A"
+        android:textCursorDrawable="@drawable/text_cursor"
+        android:textSize="16dp"/>
+
+    <EditText
+        android:id="@+id/send_et_amount"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/send_et_address"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/edittext_border_background"
+        android:hint="@string/send_currency_amount"
+        android:inputType="numberDecimal"
+        android:paddingLeft="10dp"
+        android:textColor="@color/grey_5"
+        android:textColorHint="@color/grey_A"
+        android:textCursorDrawable="@drawable/text_cursor"
+        android:textSize="16dp"/>
+
+    <TextView
+        android:id="@+id/send_coin_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/button_blue_background"
+        android:gravity="center"
+        android:text="@string/confirm_space"
+        android:textColor="@color/white"
+        android:textSize="18dp"/>
+</RelativeLayout>

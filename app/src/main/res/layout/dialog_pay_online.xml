@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/dialog_background">
+
+        <LinearLayout
+            android:id="@+id/wallet_pay_amount_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/wallet_pay_order_amount"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/space"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/pay_order_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="6.00"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/space"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CNY"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/wallet_pay_to_layout"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@+id/wallet_pay_amount_layout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:background="@drawable/edittext_border_background"
+                android:padding="2dp">
+
+                <org.payio.customview.spinner.MaterialSpinner
+                    android:id="@+id/pay_crypto_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:textSize="14dp"
+                    app:ms_padding_bottom="0dp"
+                    app:ms_padding_left="8dp"
+                    app:ms_padding_right="0dp"
+                    app:ms_padding_top="0dp"
+                    app:ms_popup_padding_bottom="8dp"
+                    app:ms_popup_padding_left="5dp"
+                    app:ms_popup_padding_right="5dp"
+                    app:ms_popup_padding_top="8dp" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="6"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/wallet_pay_order_quantity"
+                        android:textColor="@color/grey_A"
+                        android:textSize="14dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/space"
+                        android:textColor="@color/grey_A"
+                        android:textSize="14dp" />
+
+                    <TextView
+                        android:id="@+id/pay_order_quantity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="6.00"
+                        android:textColor="@color/grey_A"
+                        android:textSize="14dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/space"
+                        android:textColor="@color/grey_A"
+                        android:textSize="14dp" />
+
+                    <TextView
+                        android:id="@+id/pay_order_quantity_unit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="USDT"
+                        android:textColor="@color/grey_A"
+                        android:textSize="14dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/wallet_pay_wallet_balance"
+                        android:textColor="@color/grey_A"
+                        android:textSize="14dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/space"
+                        android:textColor="@color/grey_A"
+                        android:textSize="14dp" />
+
+                    <TextView
+                        android:id="@+id/pay_wallet_balance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="6.00"
+                        android:textColor="@color/grey_A"
+                        android:textSize="14dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/space"
+                        android:textColor="@color/grey_A"
+                        android:textSize="14dp" />
+
+                    <TextView
+                        android:id="@+id/pay_wallet_balance_unit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="USDT"
+                        android:textColor="@color/grey_A"
+                        android:textSize="14dp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/wallet_pay_password"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_below="@+id/wallet_pay_to_layout"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/edittext_border_background"
+            android:hint="@string/wallet_pay_password"
+            android:inputType="textPassword"
+            android:paddingLeft="10dp"
+            android:textColorHint="@color/grey_A"
+            android:textCursorDrawable="@drawable/text_cursor"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/wallet_pay_password_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_below="@+id/wallet_pay_password"
+            android:layout_marginLeft="16dp"
+            android:gravity="center_vertical"
+            android:textColor="@color/pink_theme"
+            android:textSize="14dp"
+            android:visibility="invisible" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_below="@+id/wallet_pay_password_tip"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/dialog_pay_cancel"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_blue_background"
+                android:gravity="center"
+                android:text="@string/cancel"
+                android:textColor="@color/white"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/dialog_pay_confirm"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="16dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_grey_background"
+                android:gravity="center"
+                android:text="@string/confirm"
+                android:textColor="@color/white"
+                android:textSize="18dp" />
+        </LinearLayout>
+    </RelativeLayout>
+</FrameLayout>

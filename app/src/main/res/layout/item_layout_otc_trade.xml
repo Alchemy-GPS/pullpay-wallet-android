@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/grey_F2" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <org.payio.customview.CircleImageView
+            android:id="@+id/item_otc_trade_head"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:src="@mipmap/user_head"
+            app:circle_background_color="@color/white"
+            app:circle_border_color="@color/grey_F2"
+            app:circle_border_width="1dp" />
+
+        <TextView
+            android:id="@+id/item_otc_trade_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/item_otc_trade_head"
+            android:text="上善若水"
+            android:textColor="@color/black"
+            android:textSize="16dp" />
+
+        <ImageView
+            android:id="@+id/item_otc_trade_super"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/item_otc_trade_username"
+            android:scaleType="centerInside"
+            android:src="@mipmap/super_seller_tag"
+            android:visibility="gone" />
+
+
+        <LinearLayout
+            android:id="@+id/close_rate_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/item_otc_trade_close_rate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="5%"
+                android:textColor="@color/grey_7" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/otc_trade_success_rate"
+                android:textColor="@color/grey_7" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/vertical_line"
+            android:layout_width="1dp"
+            android:layout_height="18dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/close_rate_layout"
+            android:background="@color/grey_F2" />
+
+        <LinearLayout
+            android:id="@+id/close_amount_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/vertical_line"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/item_otc_trade_close_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="53"
+                android:textColor="@color/grey_7" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/otc_trade_success_amount"
+                android:textColor="@color/grey_7" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@color/grey_F2" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:id="@+id/item_otc_trade_unit_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:text="2.00"
+            android:textColor="@color/blue_theme"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/item_otc_trade_unit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/item_otc_trade_unit_price"
+            android:text="CNY"
+            android:textColor="@color/blue_theme"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/item_otc_trade_button"
+            android:layout_width="50dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/green_border_background"
+            android:gravity="center"
+            android:text="@string/otc_trade_buy"
+            android:textColor="#47AB43"
+            android:textSize="16dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/otc_trade_currency_limit"
+                    android:textColor="@color/grey_7" />
+
+                <TextView
+                    android:id="@+id/item_otc_trade_currency_limit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="1.00"
+                    android:textColor="@color/grey_7" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="-"
+                    android:textColor="@color/grey_7" />
+
+                <TextView
+                    android:id="@+id/item_otc_trade_currency_max"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="1747.00"
+                    android:textColor="@color/grey_7" />
+
+                <TextView
+                    android:id="@+id/item_otc_trade_currency_unit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="CNY"
+                    android:textColor="@color/grey_7" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/otc_trade_crypto_limit"
+                    android:textColor="@color/grey_7" />
+
+                <TextView
+                    android:id="@+id/item_otc_trade_crypto_limit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="1.00"
+                    android:textColor="@color/grey_7" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="-"
+                    android:textColor="@color/grey_7" />
+
+                <TextView
+                    android:id="@+id/item_otc_trade_crypto_max"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="1747.00"
+                    android:textColor="@color/grey_7" />
+
+                <TextView
+                    android:id="@+id/item_otc_trade_crypto_unit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="USDT"
+                    android:textColor="@color/grey_7" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/item_otc_trade_receipt_wechat"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_weight="1"
+                android:src="@mipmap/icon_wechat"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/item_otc_trade_receipt_alipay"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:src="@mipmap/icon_alipay"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/item_otc_trade_receipt_bank"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:src="@mipmap/icon_bankcard"
+                android:visibility="gone" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

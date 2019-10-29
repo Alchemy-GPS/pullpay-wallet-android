@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_F2"
+    android:orientation="vertical"
+    tools:context=".mvp.login.LoginActivity">
+
+    <RelativeLayout
+        android:id="@+id/login_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white">
+
+        <org.payio.customview.TitleTextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            android:gravity="center_vertical"
+            android:text="@string/login_title"
+            android:textColor="@color/main_tab_text_ed"
+            android:textSize="20dp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/grey_F2" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/login_user_account"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:text="@string/login_user_account"
+            android:textColor="@color/black"
+            android:textSize="16dp" />
+
+        <EditText
+            android:id="@+id/login_input_user_account"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="16dp"
+            android:layout_toRightOf="@+id/login_user_account"
+            android:background="@color/transparent"
+            android:hint="@string/login_input_account"
+            android:inputType="number"
+            android:maxLength="11"
+            android:textColor="@color/black"
+            android:textColorHint="@color/grey_A"
+            android:textCursorDrawable="@drawable/text_cursor"
+            android:textSize="16dp" />
+
+        <RelativeLayout
+            android:id="@+id/login_account_delete_layout"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/input_delete" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey_F2" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/login_user_password"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:text="@string/login_user_password"
+            android:textColor="@color/black"
+            android:textSize="16dp" />
+
+        <EditText
+            android:id="@+id/login_input_user_password"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="16dp"
+            android:layout_toRightOf="@+id/login_user_password"
+            android:background="@color/transparent"
+            android:hint="@string/login_input_password"
+            android:inputType="textPassword"
+            android:maxLength="12"
+            android:textColor="@color/black"
+            android:textColorHint="@color/grey_A"
+            android:textCursorDrawable="@drawable/text_cursor"
+            android:textSize="16dp" />
+
+        <RelativeLayout
+            android:id="@+id/login_pwd_delete_layout"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/input_delete" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/login_button"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_blue_background"
+        android:gravity="center"
+        android:text="@string/login_button"
+        android:textColor="@color/white"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/login_register"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="16dp"
+        android:gravity="center_vertical"
+        android:text="@string/login_register"
+        android:textColor="@color/grey_7"
+        android:textSize="16dp" />
+
+    <WebView
+        android:id="@+id/login_webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+</LinearLayout>

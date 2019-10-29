@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <View
+        android:id="@+id/otc_order_item_dec"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#F0F1F5" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/grey_E" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="98dp">
+        <LinearLayout
+            android:id="@+id/otc_order_number_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/otc_order_number"
+                android:textColor="@color/grey_7"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/otc_order_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="xxxxxxxxx"
+                android:textColor="@color/grey_7"
+                android:textSize="14dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/otc_order_crypto_amount_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:layout_below="@+id/otc_order_number_layout"
+            android:layout_marginLeft="15dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/otc_order_crypto_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1000.00"
+                android:textColor="@color/black"
+                android:textSize="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" "
+                android:textColor="@color/black"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/otc_order_crypto_amount_unit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="USDT"
+                android:textColor="@color/black"
+                android:textSize="16dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/otc_order_currency_amount_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_below="@+id/otc_order_crypto_amount_layout"
+            android:layout_marginLeft="15dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/otc_order_currency_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1000.00"
+                android:textColor="@color/grey_7"
+                android:textSize="14dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" "
+                android:textColor="@color/grey_7"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/otc_order_currency_amount_unit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CNY"
+                android:textColor="@color/grey_7"
+                android:textSize="14dp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/otc_order_type"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:text="@string/otc_order_buy"
+            android:textColor="@color/grey_7"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/otc_order_status"
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/otc_order_type"
+            android:layout_marginRight="15dp"
+            android:gravity="center_vertical"
+            android:textColor="@color/blue_theme"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/otc_order_time"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/otc_order_status"
+            android:layout_marginRight="15dp"
+            android:gravity="center_vertical"
+            android:text="2018-11-14 00:00:00"
+            android:textColor="@color/grey_7"
+            android:textSize="14dp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/grey_E" />
+</LinearLayout>

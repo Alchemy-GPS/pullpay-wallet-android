@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <org.payio.customview.CtrlScrollViewPager
+        android:id="@+id/main_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/main_navigation" />
+
+    <ImageView
+        android:id="@+id/main_tab_shadow"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:layout_above="@+id/main_navigation"
+        android:scaleType="fitXY"
+        android:src="@mipmap/tab_shadow" />
+
+    <org.payio.navigation.BottomNavigationLayout
+        android:id="@+id/main_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <!--
+        <org.payio.navigation.BottomNavigationTab
+            android:id="@+id/main_tab_otc"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingBottom="6dp"
+            android:paddingTop="9dp"
+            app:paddingTexwithIcon="5dp"
+            app:tabIconNormal="@mipmap/nav_business"
+            app:tabIconSelected="@mipmap/nav_business_ed"
+            app:tabText="@string/main_otc"
+            app:tabTextSize="12dp"
+            app:textBold="true"
+            app:textColorNormal="@color/main_tab_text"
+            app:textColorSelected="@color/main_tab_text_ed" />
+
+        <org.payio.navigation.BottomNavigationTab
+            android:id="@+id/main_tab_order"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingBottom="6dp"
+            android:paddingTop="10dp"
+            app:paddingTexwithIcon="6dp"
+            app:tabIconNormal="@mipmap/nav_bill"
+            app:tabIconSelected="@mipmap/nav_bill_ed"
+            app:tabText="@string/main_order"
+            app:tabTextSize="12dp"
+            app:textBold="true"
+            app:textColorNormal="@color/main_tab_text"
+            app:textColorSelected="@color/main_tab_text_ed" />
+            -->
+
+        <org.payio.navigation.BottomNavigationTab
+            android:id="@+id/main_tab_wallet"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingBottom="6dp"
+            android:paddingTop="9dp"
+            app:paddingTexwithIcon="5dp"
+            app:tabIconNormal="@mipmap/nav_wallet"
+            app:tabIconSelected="@mipmap/nav_wallet_ed"
+            app:tabText="@string/main_wallet"
+            app:tabTextSize="12dp"
+            app:textBold="true"
+            app:textColorNormal="@color/main_tab_text"
+            app:textColorSelected="@color/main_tab_text_ed" />
+
+        <org.payio.navigation.BottomNavigationTab
+            android:id="@+id/main_tab_user"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingBottom="6dp"
+            android:paddingTop="9dp"
+            app:paddingTexwithIcon="5dp"
+            app:tabIconNormal="@mipmap/nav_mine"
+            app:tabIconSelected="@mipmap/nav_mine_ed"
+            app:tabText="@string/main_user"
+            app:tabTextSize="12dp"
+            app:textBold="true"
+            app:textColorNormal="@color/main_tab_text"
+            app:textColorSelected="@color/main_tab_text_ed" />
+
+    </org.payio.navigation.BottomNavigationLayout>
+</RelativeLayout>

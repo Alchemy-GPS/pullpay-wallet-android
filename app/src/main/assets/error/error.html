@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1,user-scalable=0,viewport-fit=cover">
+    <meta name="format-detection" content="telephone=no">
+    <title>系统繁忙</title>
+    <link rel="stylesheet" href="weui.css"/>
+    <link rel="stylesheet" href="demo.css"/>
+</head>
+<body ontouchstart>
+<div class="demo-title">
+    <span class="return js_item" data-id="equipment" onclick="goup()"></span>
+    <img src="title-error-busy.png"/>
+</div>
+<div class="demo-content bg-white hasbtn">
+    <p class="error-img"><img src="face-busy.png"/></p>
+    <p class="error-tip" id="error_tips">系统繁忙，请稍后再试！</p>
+    <div class="common-subteam">
+        <input type="button" value="返回" onclick="goup()"/>
+    </div>
+</div>
+<script>
+
+    function goup() {
+            window.Android.paymentBackHome();
+    }
+
+    function errorPageMessage() {
+         return window.Android.errorPageMessage();
+    }
+
+    window.onload = function(){
+        var value = errorPageMessage();
+        document.getElementById("error_tips").innerHTML = value;
+    }
+
+</script>
+</body>
+</html>

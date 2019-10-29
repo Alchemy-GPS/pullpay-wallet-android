@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".mvp.setting.AboutActivity">
+
+    <RelativeLayout
+        android:id="@+id/about_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white">
+
+        <RelativeLayout
+            android:id="@+id/about_title_back"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true">
+
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="16dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:src="@mipmap/arr_left_dark"/>
+        </RelativeLayout>
+
+        <org.payio.customview.TitleTextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:layout_centerInParent="true"
+            android:text="@string/about_title"
+            android:textColor="@color/main_tab_text_ed"
+            android:textSize="20dp"/>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/about_logo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/about_title_bar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:src="@mipmap/ic_launcher"/>
+
+    <TextView
+        android:id="@+id/about_app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/about_logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="PayIO"
+        android:textSize="15dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/about_app_name"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Installed version "
+            android:textColor="@color/black"
+            android:textSize="12dp"/>
+
+        <TextView
+            android:id="@+id/about_app_version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1.0.2"
+            android:textColor="@color/black"
+            android:textSize="12dp"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/about_app_copy_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="15dp"
+        android:text="© Copyright 2018 PAYIO LTD."
+        android:textSize="10dp"/>
+
+</RelativeLayout>

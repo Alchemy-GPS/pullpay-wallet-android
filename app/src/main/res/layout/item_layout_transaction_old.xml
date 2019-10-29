@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp">
+
+    <TextView
+        android:id="@+id/item_transaction_status"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:gravity="top"
+        android:text="@string/currency_transaction_item_send"
+        android:textColor="@color/grey_3"
+        android:textSize="14dp"/>
+
+    <TextView
+        android:id="@+id/item_transaction_time"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="16dp"
+        android:gravity="bottom"
+        android:text="2018-06-20 10:00:00"
+        android:textColor="@color/grey_7"
+        android:textSize="12dp"/>
+
+    <LinearLayout
+        android:id="@+id/item_transaction_amount_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:gravity="center"
+            android:text="@string/minus"
+            android:textColor="@color/grey_3"
+            android:textSize="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:gravity="center"
+            android:text="@string/space"
+            android:textColor="@color/grey_3"
+            android:textSize="16dp"/>
+
+        <TextView
+            android:id="@+id/item_transaction_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:gravity="center"
+            android:text="0.001111"
+            android:textColor="@color/grey_3"
+            android:textSize="16dp"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/item_transaction_unit"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/item_transaction_amount_layout"
+        android:layout_marginBottom="8dp"
+        android:layout_marginRight="16dp"
+        android:gravity="bottom"
+        android:text="USDT"
+        android:textColor="@color/grey_7"
+        android:textSize="12dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="16dp"
+        android:background="@color/grey_F2"/>
+</RelativeLayout>

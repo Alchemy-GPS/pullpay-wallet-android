@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/item_transaction_status"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:gravity="top"
+        android:text="@string/currency_transaction_item_send"
+        android:textColor="@color/grey_3"
+        android:textSize="14dp" />
+
+    <TextView
+        android:id="@+id/item_transaction_time"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="16dp"
+        android:gravity="bottom"
+        android:text="2018-06-20 10:00:00"
+        android:textColor="@color/grey_7"
+        android:textSize="12dp" />
+
+    <TextView
+        android:id="@+id/item_transaction_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="16dp"
+        android:text="-23.4350USDT"
+        android:textColor="@color/pink_theme"
+        android:textSize="16dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/grey_F2" />
+</RelativeLayout>
